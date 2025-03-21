@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Erika - Día de las Flores Amarillas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8dc;
+            color: #d4a017;
+            margin: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .flower {
+            font-size: 100px;
+        }
+        button {
+            background-color: #d4a017;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #b88b0e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feliz Día de las Flores Amarillas, Erika! 💛</h1>
+    <p>Hoy no serás espectadora, porque tú eres mi razón para celebrar este día.</p>
+    <p class="flower">🌻🌻🌻</p>
+    <p>Espero que este día esté lleno de amor y alegría, porque te lo mereces todo. 💛</p>
+    <button onclick="enviarMensaje()">Responderme en WhatsApp</button>
+
+    <script>
+        function enviarMensaje() {
+            var numero = "+59170183731"; // Reemplaza con el número de Erika en formato internacional (+123456789)
+            var mensaje = encodeURIComponent("Gracias por hacerme parte de este día tan especial! 💛");
+            window.location.href = "https://wa.me/" + numero + "?text=" + mensaje;
+        }
+    </script>
+</body>
+</html>
